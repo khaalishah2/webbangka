@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./dist/css/tiket.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Pesan Tiket | BaBel</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+  <section class="navigation">
+    <div class="container">
+      <div class="box-navigation">
+        <div class="box">
+          <h1>BaBel</h1>
+        </div>
+        <div class="box menu-navigation">
+          <ul>
+            <li><a href="home.html"><i class="ri-home-3-line"></i> Beranda</a></li>
+            <li><a href="about.html"><i class="ri-information-line"></i> Tentang</a></li>
+            <li><a href="destination.html"><i class="ri-map-2-line"></i> Destinasi</a></li>
+            <li><a href="culture.html"><i class="ri-ancient-gate-line"></i> Budaya</a></li>
+            <li><a href="food.html"><i class="ri-restaurant-2-line"></i> Kuliner</a></li>
+            <li><a href="aktivitas.html"><i class="ri-walk-line"></i> Aktivitas</a></li>
+            <li><a href="tiket.html"><i class="ri-flight-takeoff-line"></i> Pesan</a></li>
+            <li><a href="gallery.html"><i class="ri-image-2-line"></i> Galeri</a></li>
+          </ul>
+        </div>
+        <div class="box menu-bar">
+          <i class="ri-menu-3-fill" style="color: black"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Pemesanan Tiket -->
+  <div class="form-container">
+    <h1>Form Pemesanan Tiket</h1>
+    <form id="ticketForm" novalidate>
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email" required />
+
+      <label for="phone">Nomor Telepon</label>
+      <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required />
+
+      <label for="origin">Asal Keberangkatan</label>
+      <input type="text" id="origin" name="origin" placeholder="Masukkan kota asal keberangkatan" required />
+
+      <label for="destination">Tujuan Liburan</label>
+      <input type="text" id="destination" name="destination" placeholder="Contoh: Pulau Lengkuas, Belitung" required />
+
+      <label for="date">Tanggal Keberangkatan</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="tickets">Jumlah Tiket</label>
+      <input type="number" id="tickets" name="tickets" placeholder="Masukkan jumlah tiket" min="1" required />
+
+      <label for="type">Jenis Tiket</label>
+      <select id="type" name="type" required>
+        <option value="">-- Pilih jenis tiket --</option>
+        <option value="Dewasa">Dewasa</option>
+        <option value="Anak-anak">Anak-anak</option>
+      </select>
+
+      <label for="notes">Catatan Tambahan</label>
+      <textarea id="notes" name="notes" placeholder="Misal: Alergi makanan, bantuan khusus, dll." rows="3"></textarea>
+
+      <button type="submit">Daftar</button>
+    </form>
+    <p id="message"></p>
+  </div>
+</header>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="contact">
+        <h3>Kontak</h3>
+        <p>Email: disbudpar@babelprov.go.id</p>
+        <p>Telepon: (0717) 431143</p>
+        <p>Alamat: Komplek Perkantoran Pemerintah Provinsi Kepulauan Bangka Belitung, Air Itam, Pangkalpinang</p>
+      </div>
+      <div class="social">
+        <h3>Ikuti Kami</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com/bangkabelitung" target="_blank"><i class="ri-facebook-fill"></i></a>
+          <a href="https://instagram.com/bangkabelitung" target="_blank"><i class="ri-instagram-line"></i></a>
+          <a href="https://twitter.com/babel_tourism" target="_blank"><i class="ri-twitter-x-line"></i></a>
+          <a href="https://youtube.com/@bangkabelitung" target="_blank"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Bangka Belitung Tourism. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="./dist/js/script.js"></script>
+<script src="./dist/js/tiket.js"></script>
+</body>
+</html>
